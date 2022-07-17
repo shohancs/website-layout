@@ -7,14 +7,65 @@
     <title>Responsive-Website</title>
 
     <style>
+        body{
+            max-width: 800px;            
+            margin: 0 auto;
+            border: 1px solid plum;
+        }
         h1{
-            font-size: 100px;
+            font-size: 10vw;
+        }
+
+        .tiger img{
+            width: 100%;
+        }
+
+        .container-two{
+            display: flex;
+            
+        }
+
+        .container-two .split{
+            width: 50%;
+        }
+
+        /* Make image Responsive inside */
+        .split img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px){
+            .container-two{
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split{
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <section>
         <h1>My Responsive-Website</h1>
+    </section>
+
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+
+    <section>
+        <h2>Two Part</h2>
+        
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+        </div>
     </section>
 </body>
 </html>
