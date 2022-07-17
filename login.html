@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
 
+        <script src="https://kit.fontawesome.com/0c66e46c25.js" crossorigin="anonymous"></script>
+
         <style>
             .login-container{
                 display: flex;
@@ -34,10 +36,35 @@
                 color: whitesmoke;
                 cursor: pointer;
             }
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+            nav a{
+                text-decoration: none;
+                color: black;
+                margin-right: 15px;
+            }
         </style>
     </head>
 
     <body>
+        <header>
+            <nav>
+                <span>
+                    <a href="">Home</a>
+                    <a href="">Dashboard</a>
+                    <a href="">Inventory</a>
+                    <a href="">Contact Us</a>
+                </span>
+
+                <span>
+                    <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                </span>       
+            </nav>
+        </header>
+
         <div class="login-container">
             <form action="" class="login-form">
                 <h2>Please LogIn</h2>
