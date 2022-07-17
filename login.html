@@ -7,10 +7,17 @@
         <title>Login</title>
 
         <style>
+            .login-container{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
             .login-form{
                 display: flex;
                 flex-direction: column;
                 width: 50%;
+                border: 2px solid indianred;
             }
 
             .login-form input{
@@ -18,15 +25,26 @@
                 margin-top: 1em;
                 padding: 5px 10px;
             }
+
+            .login-form input[type="submit"]{
+                background-color: goldenrod;
+                font-weight: 700;
+                border: 0;
+                border-radius: 5px;
+                color: whitesmoke;
+                cursor: pointer;
+            }
         </style>
     </head>
 
     <body>
-        <form action="" class="login-form">
-            <h3>Please LogIn</h3>
-            <input type="email" name="" id="" placeholder="Enter Your Mail" required>
-            <input type="password" name="" id="" placeholder="password" required>
-            <input type="submit" value="LogIn">
-        </form>
+        <div class="login-container">
+            <form action="" class="login-form">
+                <h2>Please LogIn</h2>
+                <input type="email" name="" id="" placeholder="Enter Your Mail" required>
+                <input type="password" name="" id="" placeholder="password" required>
+                <input type="submit" value="LogIn">
+            </form>
+        </div>
     </body>
 </html>
